@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adam Dryden</title>
+    <style>
+        .resized-image {
+            width: 25%; /* Resize to 25% of the original size */
+        }
+        .skill-bar {
+            display: flex;
+            height: 30px;
+            width: 100%;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative; /* Make the container relative */
+        }
+        .skill-level {
+            height: 100%;
+            position: relative; /* Make the skill level relative */
+        }
+        .skill-text {
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            color: white; /* Text color */
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .html-skill {
+            width: 50%;
+            background-color: #4caf50; /* Green */
+        }
+        .css-skill {
+            width: 50%;
+            background-color: #2196f3; /* Blue */
+        }
+        .js-skill {
+            width: 30%;
+            background-color: #ff9800; /* Orange */
+        }
+        .py-skill {
+            width: 50%;
+            background-color: #4c00ff; /* Purple */
+        }
+        .sql-skill {
+            width: 20%;
+            background-color: #ff0000; /* Red */
+        }
+        .flask-skill {
+            width: 20%;
+            background-color: #00f7ff; /* Cyan */
+        }
+        .postman-skill {
+            width: 20%;
+            background-color: #ffbb00; /* Orange */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Home Page/Section -->
+    <section id="home">
+        <h1>Welcome to My Portfolio</h1>
+        <img src="me red shirt.jpg" alt="Profile Picture" class="resized-image"> <!-- Profile picture -->
+        <p>Hi, I'm Adam Dryden. Welcome to my portfolio!</p> <!-- Brief bio and welcome message -->
+    </section>
+
+    <!-- About Me Page/Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Background: I have over 20 years of experience in digital literacy, 5 of which I have spent learning programming languages such as Python, HTML/CSS, and JavaScript. I started college at Golden Gate University through outlier.org, but I decided to specialize and streamline my education, so I am now learning software engineering through Coding Temple, and will soon be graduating in early 2025. Ever since I got my first HP desktop computer as a young child I have been fascinated with software, aspiring to one day build my own video games.</p>
+        <p>Education: Associate of Science in Applied Computing, Golden Gate University (Incomplete), Software Engineering Certificate, Coding Temple (Pending)</p>
+        <p>Career Goals: My career goal is to build a distributed technology enterprise, empowering all people with adaptive, accessible technology that positively impacts their life and environment.</p>
+        <p>Personal Interests: Art, Coding, Family, Gardening, Gaming, Writing</p>
+    </section>
+
+    <!-- Projects Page/Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>RESTful E-Commerce API</h3>
+            <img src="project1.jpeg" alt="Project Image"> <!-- Project image -->
+            <p>Description: A RESTful API for an e-commerce platform using Flask, SQLAlchemy, and Marshmallow. It provides endpoints for managing customers, products, orders, and customer accounts.</p>
+            <p>Technologies Used: VSCode, Python, SQL, Flask, Marshmallow, Postman, SQLAlchemy</p>
+            <a href="https://github.com/Phlotonic/CT-E-Commerce-API-Mini-Project">View Project</a> <!-- Link to project -->
+        </div>
+        <div class="project">
+            <h3>Library Database Management System</h3>
+            <img src="project2.jpeg" width = 48.5% alt="Project Image"> <!-- Project image -->
+            <p>Description: A Library Management System, now with integrated database and database functionality!</p>
+            <p>Technologies Used: VSCode, Python, SQL</p>
+            <a href="https://github.com/Phlotonic/CT-Library-Management-System-with-Database-Integration-Mini-Project">View Project</a> <!-- Link to project -->
+        </div>
+        <!-- Repeat the above div for more projects -->
+    </section>
+
+    <!-- Skills Page/Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill">
+            <p>Web Development</p>
+            <div class="skill-bar">
+                <div class="skill-level html-skill">
+                    <span class="skill-text">HTML: 5 years</span> <!-- Text inside the bar -->
+                </div>
+                <div class="skill-level css-skill">
+                    <span class="skill-text">CSS: 5 years</span> <!-- Text inside the bar -->
+                </div>
+                <div class="skill-level js-skill">
+                    <span class="skill-text">JavaScript: 3 years</span> <!-- Text inside the bar -->
+                </div>
+            </div>
+            <p>Database Development</p>
+            <div class="skill-bar">
+                <div class="skill-level py-skill">
+                    <span class="skill-text">Python: 5 years</span> <!-- Text inside the bar -->
+                </div>
+                <div class="skill-level sql-skill">
+                    <span class="skill-text">SQL: 1 year</span> <!-- Text inside the bar -->
+                </div>
+                <div class="skill-level flask-skill">
+                    <span class="skill-text">Flask: 1 year</span> <!-- Text inside the bar -->
+                </div>
+                <div class="skill-level postman-skill">
+                    <span class="skill-text">Postman: 1 year</span> <!-- Text inside the bar -->
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- Repeat the above div for more skills -->
+    </section>
+
+    <!-- Contact Page/Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="submit-form.php" method="post"> <!-- Contact form -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required> <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required> <br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea> <br>
+            <button type="submit">Send</button>
+        </form>
+        <p>Email: <a href="mailto:adryden508@gmail.com">click here</a></p> <!-- Email address -->
+        <p>Follow me on:
+            <a href="https://github.com/Phlotonic">Github | </a>
+            <a href="https://www.linkedin.com/in/adam-dryden-34b11276/">LinkedIn | </a>
+            <a href="https://medium.com/@adamdryden">Medium</a>
+        </p> <!-- Social media links -->
+    </section>
+</body>
+</html>
